@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CypherGuard - Guide</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/Logo/icon.png" />
+
+    <!-----------------------------------------
+      -------------  Polices  -----------------
+    --------------------------------------------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!----------------------------------------
+      --------------------------------------
+      --------------------------------------->
+  </head>
+  <body>
+    <!--------------
+      ###################################
+      #############  Entête  ###############
+      ########################################
+    ---------------->
+
+    <header>
+      <div class="allLogo">
+        <img
+          src="img/Logo/logo-part1.png"
+          alt="Partie 1 du Logo"
+          class="logo"
+        />
+        <img src="img/Logo/blackshape.png" alt="" class="blackshape" />
+      </div>
+
+      <h1>
+        <a href="index.html">
+          Cipher
+          <div class="guard">Guard</div>
+        </a>
+      </h1>
+      <nav>
+        <a href="download.html">Téléchargement</a>
+        <a href="guide.html">Guide</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <div id="cLog"><img src="img/Logo/icon2.PNG" alt="" /></div>
+    <div class="menuContainer">
+      <button class="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </div>
+
+    <!--------------
+      ###################################
+      #############  Sommaire ###############
+      ########################################
+    ---------------->
+
+    <main>
+      <section id="sommaire">
+        <ol>
+          <li class="sommaireTitle">
+            <a href="#introduction"><h3>1.Introduction</h3></a>
+          </li>
+          <li>
+            <a href="#introduction_1-1"><p>- Objectif du guide</p></a>
+          </li>
+          <li>
+            <a href="#introduction_1-2"><p>- Aperçu de CypherGuard</p></a>
+          </li>
+          <li class="sommaireTitle">
+            <a href="#install"><h3>2.Installation et Configuration</h3></a>
+          </li>
+          <li>
+            <a href="#install_2-1"><p>- Prérequis système</p></a>
+          </li>
+          <li>
+            <a href="#install_2-2"><p>- Installation du logiciel</p></a>
+          </li>
+          <li>
+            <a href="#install_2-3"><p>- Configuration de base</p></a>
+          </li>
+          <li class="sommaireTitle">
+            <a href="#principe"
+              ><h3>3.Principes Fondamentaux de Cryptage</h3></a
+            >
+          </li>
+          <li>
+            <a href="#principe_3-1"><p>- Comprendre le cryptage</p></a>
+          </li>
+          <li>
+            <a href="#principe_3-2"><p>- Types de cryptage</p></a>
+          </li>
+          <li>
+            <a href="#principe_3-3"><p>- Méthodes de cryptage</p></a>
+          </li>
+          <li class="sommaireTitle">
+            <a href="#interface"
+              ><h3>4.Utilisation de l'Interface Utilisateur</h3></a
+            >
+          </li>
+          <li>
+            <a href="#interface_4-1"><p>- Navigation dans l'interface</p></a>
+          </li>
+          <li>
+            <a href="#interface_4-2"
+              ><p>- Configuration des paramètres de cryptage</p></a
+            >
+          </li>
+          <li>
+            <a href="#interface_4-3"
+              ><p>- Cryptage de fichiers et de dossiers</p></a
+            >
+          </li>
+          <li class="sommaireTitle">
+            <a href="#gestion"><h3>5.Gestion des Clés de Cryptage</h3></a>
+          </li>
+          <li>
+            <a href="#gestion_5-1"><p>- Génération de clés</p></a>
+          </li>
+          <li>
+            <a href="#gestion_5-2"
+              ><p>- Importation et exportation de clés</p></a
+            >
+          </li>
+          <li>
+            <a href="#gestion_5-3"><p>- Sécurité des clés</p></a>
+          </li>
+          <li class="sommaireTitle">
+            <a href="#avance"><h3>6.Cryptage Avancé</h3></a>
+          </li>
+          <li>
+            <a href="#avance_6-1"><p>- Cryptage de disques entiers</p></a>
+          </li>
+          <li>
+            <a href="#avance_6-2"><p>- Cryptage de communications</p></a>
+          </li>
+          <li>
+            <a href="#avance_6-3"><p>- Cryptage en couches multiples</p></a>
+          </li>
+          <li class="sommaireTitle">
+            <a href="#dechiffrement"
+              ><h3>7.Déchiffrement et Accès aux Données Cryptées</h3></a
+            >
+          </li>
+          <li>
+            <a href="#dechiffrement_7-1"><p>- Processus de déchiffrement</p></a>
+          </li>
+          <li>
+            <a href="#dechiffrement_7-2"
+              ><p>- Gestion des données cryptées</p></a
+            >
+          </li>
+          <li>
+            <a href="#dechiffrement_7-3"><p>- Récupération des données</p></a>
+          </li>
+          <li class="sommaireTitle">
+            <a href="#security"><h3>8.Sécurité et Bonnes Pratiques</h3></a>
+          </li>
+          <li>
+            <a href="#security_8-1"
+              ><p>- Protection des données sensibles</p></a
+            >
+          </li>
+          <li>
+            <a href="#security_8-2"><p>- Mises à jour de sécurité</p></a>
+          </li>
+          <li>
+            <a href="#security_8-3"><p>- Gestion des mots de passe</p></a>
+          </li>
+          <li class="sommaireTitle">
+            <a href="#support"><h3>9.Dépannage et Support</h3></a>
+          </li>
+          <li>
+            <a href="#support_9-1"><p>- Problèmes courants et solutions</p></a>
+          </li>
+          <li>
+            <a href="#support_9-2"><p>- Ressources de support en ligne</p></a>
+          </li>
+          <li class="sommaireTitle">
+            <a href="#conclusion"><h3>10.Conclusion</h3></a>
+          </li>
+          <li>
+            <a href="#conclusion_10-1"
+              ><p>- Récapitulation des points clés</p></a
+            >
+          </li>
+          <li>
+            <a href="#conclusion_10-2"
+              ><p>- Perspectives futures du logiciel</p></a
+            >
+          </li>
+          <li class="sommaireTitle">
+            <a href="#annexe"><h3>11.Annexe</h3></a>
+          </li>
+          <li>
+            <a href="#annexe_11-1"><p>- Glossaire des termes</p></a>
+          </li>
+          <li>
+            <a href="#annexe_11-2"
+              ><p>- Références et ressources supplémentaires</p></a
+            >
+          </li>
+        </ol>
+      </section>
+
+      <!--------------
+      ###################################
+      #############  Contenu principal ###############
+      ########################################
+    ---------------->
+
+      <section id="guide">
+        <article id="introduction">
+          <h3>1. Introduction</h3>
+          <h4 id="introduction_1-1">Objectif du guide</h4>
+          <p>
+            Lorem ipsum dolor sit amet. Hic corporis nihil est fugit dolore vel
+            excepturi consectetur rem sunt soluta et dicta tenetur aut quidem
+            quam et fugiat enim. Ea quia consequuntur sed minima rerum est
+            beatae dolorem eum quod voluptatum aut laudantium excepturi et eaque
+            Quis. Eum accusantium voluptatem vel dolor omnis qui pariatur
+            reiciendis in eligendi perspiciatis et vitae quia qui corrupti nemo?
+          </p>
+          <h4 id="introduction_1-2">Aperçu de CypherGuard</h4>
+          <p>
+            Ea harum ratione et illum iure qui fugit consequatur et dolorem
+            iusto. Est numquam laboriosam nam voluptas atque non saepe
+            cupiditate aut veniam consequatur. Sed ipsa vero aut autem
+            asperiores ut dolores mollitia! Sed quos voluptates et neque
+            molestias est explicabo consequatur in debitis voluptatem id fugit
+            tenetur qui consequuntur minima. Quo reiciendis commodi ut incidunt
+            earum ea asperiores velit.
+          </p>
+          <div class="flexRowImg">
+            <img
+              class="firstImg"
+              width="400px"
+              src="img/Example/placeholder.svg"
+              alt=""
+            />
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+          </div>
+        </article>
+        <article id="install">
+          <h3>2. Installation et Configuration</h3>
+          <h4 id="install_2-1">Prérequis système</h4>
+          <p>
+            Lorem ipsum dolor sit amet. Vel amet ipsam est architecto
+            consequatur non sunt dolores qui aspernatur velit ut vero velit sed
+            quas laborum. Vel suscipit expedita ut blanditiis dolore sed enim
+            maxime ad rerum iusto et quaerat impedit aut aliquid libero quo
+            totam doloribus. Et nesciunt quas ab impedit debitis eum laudantium
+            exercitationem. Aut similique blanditiis a unde voluptatem ad
+            voluptatum odit sed minus veritatis et quia asperiores et nemo illum
+            aut dolor inventore. Ex unde mollitia in quod repellat et unde
+            voluptatum qui perspiciatis iusto est illum blanditiis eos
+            consequuntur magni. Eum dignissimos odit aut consequatur atque ut
+            natus earum sit ipsum optio a ipsam corporis quo corrupti voluptas.
+            Ut veniam fuga ea quod enim qui officiis internos qui vero
+            reiciendis non rerum omnis aut voluptatem internos. Aut similique
+            tenetur et minus libero qui fugiat excepturi qui vitae fugiat eos
+            cumque exercitationem et laborum galisum est dolorum odio. Aut quae
+            enim id quisquam modi quo repudiandae temporibus. <br />
+          </p>
+          <h5>Windows</h5>
+          <table>
+            <tr>
+              <td>CPU</td>
+              <td>2 cores, Intel Core i4 or better</td>
+            </tr>
+            <tr>
+              <td>Memory</td>
+              <td>2 GB minimum</td>
+            </tr>
+            <tr>
+              <td>Free disc space</td>
+              <td>600 Mo minimum</td>
+            </tr>
+          </table>
+
+          <h4 id="install_2-2">Installation du logiciel</h4>
+          <p>
+            Sit itaque natus et sint quam qui magni suscipit. Quo sapiente
+            galisum ad praesentium dolor in dicta beatae qui sapiente commodi et
+            quia iusto! In voluptas praesentium ut voluptas dolorum cum nulla
+            eveniet et quam porro et voluptatem nostrum et quidem dolore sit
+            tempore temporibus.
+          </p>
+          <br />
+          <p>
+            - Qui expedita perferendis vel voluptatem obcaecati ut mollitia
+            dolorem et sint neque. <br /><br />
+            - Ea voluptatum consequuntur qui ducimus magnam ut quaerat voluptate
+            aut itaque quas ut eveniet laudantium id quas error. <br /><br />-
+            Aut maxime pariatur quo accusantium iure qui quas dolores. <br />
+          </p>
+          <div class="flexRowImg installImg">
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+          </div>
+          <p>
+            <br />
+            - Qui expedita perferendis vel voluptatem obcaecati ut mollitia
+            dolorem et sint neque. <br /><br />
+            - Ea voluptatum consequuntur qui ducimus magnam ut quaerat voluptate
+            aut itaque quas ut eveniet laudantium id quas error. <br /><br />-
+            Aut maxime pariatur quo accusantium iure qui quas dolores.
+            <br /><br />
+            - Qui expedita perferendis vel voluptatem. <br /><br />
+            - Eveniet laudantium id quas error. <br /><br />- Aut maxime
+            pariatur quo accusantium.
+          </p>
+          <h4 id="install_2-3">Configuration de base</h4>
+          <p>
+            Qui aspernatur quaerat sit rerum neque id saepe sequi et maxime
+            consequatur et accusantium eligendi. Ut officiis fuga et rerum
+            internos id nulla exercitationem in nihil libero qui ullam sequi est
+            assumenda necessitatibus et voluptate doloremque. Vel corporis sint
+            in quam omnis aut nostrum optio est sunt iure. Est voluptates magni
+            ex fugiat quasi est fugiat harum vel itaque minima. Id rerum omnis
+            33 harum culpa ut quas autem eum consequuntur velit vel omnis
+            voluptas.
+          </p>
+        </article>
+        <article id="principe">
+          <h3>3. Principes Fondamentaux de Cryptage</h3>
+          <h4 id="principe_3-1">Comprendre le cryptage</h4>
+          <p>
+            Sed similique inventore quo autem ipsum At asperiores sint ut
+            repellat fugiat. Et nihil voluptas ea ipsam delectus id neque quasi.
+            Aut sint quidem ex incidunt delectus ut praesentium nihil a internos
+            sunt aut eligendi atque et quia numquam qui nobis rerum. Et rerum
+            quasi et aspernatur provident ut architecto cumque. Eos molestiae
+            excepturi ea nesciunt nemo qui deleniti necessitatibus est
+            voluptatibus voluptas et aliquam quam? Sed maxime consequuntur qui
+            itaque reiciendis et quae voluptatem quo placeat distinctio et quos
+            reiciendis. Ut aspernatur odit est mollitia dolores ut eveniet
+            consequatur et tempore deleniti.
+          </p>
+          <h4 id="principe_3-2">Type de cryptage</h4>
+          <p>
+            Est officiis beatae et repellat commodi cum culpa doloremque sed
+            nisi sunt. Non ipsam delectus eum sequi omnis qui galisum illo a
+            fugiat numquam : <br />
+            <br />
+            - Symmetrical <br />- Asymmetrical <br /><br />
+
+            Symmetrical nihil voluptas ea ipsam delectus id neque quasi. Aut
+            sint quidem ex incidunt delectus ut praesentium nihil a internos
+            sunt aut eligendi atque et quia numquam qui nobis rerum. <br />
+            Asymmetrical est voluptates magni ex fugiat quasi est fugiat harum
+            vel itaque minima.
+          </p>
+          <h4 id="principe_3-3">Méthodes de cryptage</h4>
+          <p>
+            Symmetrical : DES, and Triple DES and l'AES. <br />Asymmetrical :
+            RSA.
+          </p>
+        </article>
+        <article id="interface">
+          <h3>4. Utilisation de l'interface utilisateur</h3>
+          <h4 id="interface_4-1">Navigation dans l'interface</h4>
+          <p>
+            A tenetur porro eum numquam placeat est aspernatur quod est
+            molestiae consectetur rem temporibus quidem et officia ipsam.
+          </p>
+          <div class="flexRowImg">
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+          </div>
+          <p>
+            Ex unde mollitia in quod repellat et unde voluptatum qui
+            perspiciatis iusto est illum blanditiis eos consequuntur magni. Eum
+            dignissimos odit aut consequatur atque ut natus earum sit ipsum
+            optio a ipsam corporis quo corrupti voluptas.
+          </p>
+          <div class="flexRowImg">
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+          </div>
+          <p>
+            Qui aspernatur quaerat sit rerum neque id saepe sequi et maxime
+            consequatur et accusantium eligendi.
+          </p>
+          <h4 id="interface_4-2">Configuration des paramètres de cryptage</h4>
+          <p>
+            Eos molestiae excepturi ea nesciunt nemo - deleniti necessitatibus
+            est voluptatibus voluptas
+          </p>
+          <div class="flexRowImg">
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+          </div>
+          <h4 id="interface_4-3">Cryptage de fichiers et de dossiers</h4>
+          <p>
+            Sed corporis voluptatem a quidem explicabo id accusantium sunt a
+            officiis quod At quibusdam inventore. Eum excepturi rerum quo
+            internos fuga et neque voluptatem 33 fugiat quas qui illo
+            repudiandae. <br /><br />1. Illum blanditiis <br /><br />2.
+            Temporibus quidem et officia ipsam. <br /><br />3. Officiis beatae
+            et repellat commodi
+          </p>
+        </article>
+        <article id="gestion">
+          <h3>5. Gestion des Clés de Cryptage</h3>
+          <h4 id="gestion_5-1">Génération de clés</h4>
+          <p>
+            Aut sint quidem ex incidunt delectus ut praesentium nihil a internos
+            sunt aut eligendi atque et quia numquam qui nobis rerum. Et rerum
+            quasi et aspernatur provident ut architecto cumque.
+          </p>
+          <div class="flexRowImg">
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+          </div>
+          <h4 id="gestion_5-2">Importation et exportation de clés</h4>
+          <p>
+            Sed quos voluptates et neque molestias est explicabo consequatur in
+            debitis voluptatem id fugit tenetur qui consequuntur minima. Quo
+            reiciendis commodi ut incidunt earum ea asperiores velit.
+          </p>
+          <div class="flexRowImg installImg">
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+          </div>
+          <p>
+            Vel corporis sint in quam omnis aut nostrum optio est sunt iure. Est
+            voluptates magni ex fugiat quasi est fugiat harum vel itaque minima.
+            Id rerum omnis 33 harum culpa ut quas autem eum consequuntur velit
+            vel omnis voluptas.
+          </p>
+          <h4 id="gestion_5-3">Sécurité des clés</h4>
+          <p>
+            Et nesciunt quas ab impedit debitis eum laudantium exercitationem.
+            Aut similique blanditiis a unde voluptatem ad voluptatum odit sed
+            minus veritatis et quia asperiores et nemo illum aut dolor
+            inventore. Ex unde mollitia in quod repellat et unde voluptatum qui
+            perspiciatis iusto est illum blanditiis eos consequuntur magni.
+          </p>
+        </article>
+        <article id="avance">
+          <h3>6. Cryptage Avancé</h3>
+          <h4 id="avance_6-1">Cryptage de disques entiers</h4>
+          <p>
+            Ut nihil consequatur ea provident iste qui ullam atque eum enim
+            voluptas. Et voluptates eaque est animi amet quo laborum officiis ut
+            nulla commodi non consectetur voluptatibus est modi voluptates. Qui
+            maiores quae et animi nihil qui galisum tenetur sit provident
+            molestias sit debitis asperiores. Non minima amet sit porro
+            excepturi ab illum sint.
+          </p>
+          <div class="flexRowImg">
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+          </div>
+          <h4 id="avance_6-2">Cryptage de communications</h4>
+          <p>
+            Vel corporis sint in quam omnis aut nostrum optio est sunt iure. Est
+            voluptates magni ex fugiat quasi est fugiat harum vel itaque minima.
+            Id rerum omnis 33 harum culpa ut quas autem eum consequuntur velit
+            vel omnis voluptas.
+          </p>
+          <div class="flexRowImg">
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+          </div>
+          <h4 id="avance_6-3">Cryptage en couches multiples</h4>
+          <p>
+            Sed similique inventore quo autem ipsum At asperiores sint ut
+            repellat fugiat. Et nihil voluptas ea ipsam delectus id neque quasi.
+            Aut sint quidem ex incidunt delectus ut praesentium nihil a internos
+            sunt aut eligendi atque et quia numquam qui nobis rerum. Et rerum
+            quasi et aspernatur provident ut architecto cumque. Eos molestiae
+            excepturi ea nesciunt nemo qui deleniti necessitatibus est
+            voluptatibus voluptas et aliquam quam? Sed maxime consequuntur qui
+            itaque reiciendis et quae voluptatem quo placeat distinctio et quos
+            reiciendis. Ut aspernatur odit est mollitia dolores ut eveniet
+            consequatur et tempore deleniti.
+          </p>
+          <div class="flexRowImg">
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+          </div>
+          <p>
+            Sed similique inventore quo autem ipsum At asperiores sint ut
+            repellat fugiat. Et nihil voluptas ea ipsam delectus id neque quasi.
+            Aut sint quidem ex incidunt delectus ut praesentium nihil a internos
+            sunt aut eligendi atque et quia numquam qui nobis rerum. Et rerum
+            quasi et aspernatur provident ut architecto cumque. Eos molestiae
+            excepturi ea nesciunt nemo qui deleniti necessitatibus est
+            voluptatibus voluptas et aliquam quam? Sed maxime consequuntur qui
+            itaque reiciendis et quae voluptatem quo placeat distinctio et quos
+            reiciendis. Ut aspernatur odit est mollitia dolores ut eveniet
+            consequatur et tempore deleniti.
+          </p>
+        </article>
+        <article id="dechiffrement">
+          <h3>7. Déchiffrement et Accès aux Données Cryptées</h3>
+          <h4 id="dechiffrement_7-1">Processus de déchiffrement</h4>
+          <p>
+            Ea minus autem ut quia numquam rem obcaecati odio quo facere sunt
+            non provident dolorum. Cum fugiat eaque est assumenda explicabo et
+            impedit nemo vel molestiae repellendus et blanditiis facere! Non
+            quas quis aut maxime necessitatibus et harum deserunt et officiis
+            nihil aut optio quibusdam ut omnis Quis cum dolor eveniet. Qui
+            galisum possimus et accusantium nihil et facere soluta et odit illo
+            qui placeat quos aut officiis optio. Hic soluta nemo sed totam
+            aliquam sit aliquam adipisci! Vel aliquam tenetur eos consectetur
+            repellendus qui minus quos ut excepturi distinctio. Non maiores
+            eligendi eos placeat quos et consequatur omnis est dolor atque.
+          </p>
+          <h4 id="dechiffrement_7-2">Gestion des données cryptées</h4>
+          <p>
+            Aut quas itaque non dolore quia Qui laudantium qui quam culpa rem
+            incidunt neque non velit autem. Qui consectetur nisiAut expedita sed
+            omnis officiis et quia sunt id itaque fugit nam dolorem alias ut
+            molestias nesciunt! Qui velit voluptatibus aut illum dolorQuo
+            impedit et accusamus veritatis eos eveniet quis.
+          </p>
+          <br />
+          <ul>
+            <li>Et accusamus dolorum est quos consequuntur.</li>
+            <li>
+              Quo quia provident aut placeat velit aut illum ipsa in omnis
+              suscipit?
+            </li>
+            <li>
+              Ut sint recusandae sed corporis natus est fugiat sunt ad assumenda
+              natus.
+            </li>
+          </ul>
+          <h4 id="dechiffrement_7-3">Récupération des données</h4>
+          <p>
+            Non fugiat voluptatem non unde similiqueest temporibus et galisum
+            delectus. Et recusandae commodi vel totam solutaab harum! In maxime
+            quae et expedita quiaest alias aut molestiae fugit.
+          </p>
+          <div class="flexRowImg">
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+          </div>
+        </article>
+        <article id="security">
+          <h3>8. Sécurité et Bonnes Pratiques</h3>
+          <h4 id="security_8-1">Protection des données sensibles</h4>
+          Aut deserunt enim eum quae earum et libero amet ut veritatis dolor. Ut
+          ullam fugit et temporibus corrupti a cupiditate blanditiis. In
+          delectus laborum ab quia illum aut optio corrupti aut delectus
+          perspiciatis aut magnam commodi. Sit eligendi odio et culpa quod ut
+          voluptate omnis eos incidunt quis.
+          <h4 id="security_8-2">Mises à jour de sécurité</h4>
+          <p>
+            Et rerum quasi et aspernatur provident ut architecto cumque. Eos
+            molestiae excepturi ea nesciunt nemo qui deleniti necessitatibus est
+            voluptatibus voluptas et aliquam quam? Sed maxime consequuntur qui
+            itaque reiciendis et quae voluptatem quo placeat distinctio et quos
+            reiciendis.
+          </p>
+          <h4 id="security_8-3">Gestion des mots de passe</h4>
+          <p>
+            Et nesciunt quas ab impedit debitis eum laudantium exercitationem.
+            Aut similique blanditiis a unde voluptatem ad voluptatum odit sed
+            minus veritatis et quia asperiores et nemo illum aut dolor
+            inventore. Ex unde mollitia in quod repellat et unde voluptatum qui
+            perspiciatis iusto est illum blanditiis eos consequuntur magni.
+          </p>
+          <div class="flexRowImg">
+            <img width="400px" src="img/Example/placeholder.svg" alt="" />
+          </div>
+        </article>
+        <article id="support">
+          <h3>9. Dépannage et Support</h3>
+          <h4 id="support_9-1">Problèmes courants et solutions</h4>
+          <p>
+            Aut delectus placeat 33 fugit doloremque et tempore animi quo fugit
+            quaerat et quia autem qui quia officia. Qui sunt cumque ut unde
+            galisum cum odit pariatur non debitis soluta aut ipsa laborum?
+          </p>
+          <br />
+          <br />
+          <ul>
+            <li>
+              Sed voluptatum voluptatem ea galisum quia ut voluptatem laborum ea
+              facilis esse.
+            </li>
+            <br />
+            <li>Qui eligendi sunt qui quae quos ut quas itaque!</li>
+            <br />
+            <li>
+              Est cupiditate voluptatibus est deserunt nostrum ex voluptas
+              excepturi.
+            </li>
+            <br />
+            <li>Et eligendi quibusdam aut debitis nisi.</li>
+            <br />
+            <li>Et nihil architecto in dolorem quis ea sint voluptas.</li>
+            <br />
+            <li>Aut iste nihil rem nisi enim et mollitia dolores.</li>
+            <br />
+            <li>
+              Sit aliquam doloremque est totam sunt aut voluptatibus
+              necessitatibus.
+            </li>
+          </ul>
+          <h4 id="support_9-2">Ressources de support en ligne</h4>
+          <p>
+            Non dolores unde vel repellendus vero sit vero placeat id vitae
+            odio! Et fugit itaque et internos asperiores est possimus modi.
+            <a href="contact.html">Ici</a>
+          </p>
+        </article>
+        <article id="conclusion">
+          <h3>10. Conclusion</h3>
+          <h4 id="conclusion_10-1">Récapitulation des points clés</h4>
+          <p>
+            Lorem ipsum dolor sit amet. Aut repellendus rerum est nihil galisum
+            sed odio quidem quo voluptatum ducimus hic libero minima eum
+            incidunt velit aut galisum distinctio. Ea porro dolorem 33 esse
+            molestiae et maiores voluptatum est dolorum minima et provident
+            dolorem? Aut cupiditate nihil id saepe omnis qui provident
+            consequuntur ad galisum voluptas et voluptatem veniam hic optio
+            quasi. Sed consequuntur delectus sit recusandae esse sed internos
+            placeat et molestiae atque qui deserunt odit. Et dicta perferendis
+            hic maiores provident vel praesentium natus aut saepe temporibus hic
+            omnis consectetur in nostrum eius? Quo voluptates beatae ut modi
+            itaque non repellendus voluptatem ut quia doloremque. Qui velit
+            possimus 33 maxime reprehenderit ex omnis sint ut ullam molestiae
+            est assumenda dolores aut corrupti saepe sed iusto enim.
+          </p>
+          <h4 id="conclusion_10-2">Perspectives futures du logiciel</h4>
+          <p>
+            Sed consequuntur delectus sit recusandae esse sed internos placeat
+            et molestiae atque qui deserunt odit. Et dicta perferendis hic
+            maiores provident vel praesentium natus aut saepe temporibus hic
+            omnis consectetur in nostrum eius? Quo voluptates beatae ut modi
+            itaque non repellendus voluptatem ut quia doloremque. Qui velit
+            possimus 33 maxime reprehenderit ex omnis sint ut ullam molestiae
+            est assumenda dolores aut corrupti saepe sed iusto enim...
+          </p>
+        </article>
+        <article id="annexe">
+          <h3>11. Annexe</h3>
+          <h4 id="annexe_11-1">Glossaire des termes</h4>
+          <ul>
+            <li>
+              Sed voluptatum voluptatem ea galisum quia ut voluptatem laborum ea
+              facilis esse.
+            </li>
+            <br />
+            <li>Qui eligendi sunt qui quae quos ut quas itaque!</li>
+            <br />
+            <li>
+              Est cupiditate voluptatibus est deserunt nostrum ex voluptas
+              excepturi.
+            </li>
+            <br />
+            <li>Et eligendi quibusdam aut debitis nisi.</li>
+            <br />
+            <li>Et nihil architecto in dolorem quis ea sint voluptas.</li>
+            <br />
+            <li>Aut iste nihil rem nisi enim et mollitia dolores.</li>
+            <br />
+            <li>
+              Sit aliquam doloremque est totam sunt aut voluptatibus
+              necessitatibus.
+            </li>
+            <br />
+            <li>Qui eligendi sunt qui quae quos ut quas itaque!</li>
+            <br />
+            <li>
+              Est cupiditate voluptatibus est deserunt nostrum ex voluptas
+              excepturi.
+            </li>
+            <br />
+            <li>Et eligendi quibusdam aut debitis nisi.</li>
+            <br />
+            <li>Et nihil architecto in dolorem quis ea sint voluptas.</li>
+            <br />
+            <li>Aut iste nihil rem nisi enim et mollitia dolores.</li>
+            <br />
+            <li>Qui eligendi sunt qui quae quos ut quas itaque!</li>
+            <br />
+            <li>
+              Est cupiditate voluptatibus est deserunt nostrum ex voluptas
+              excepturi.
+            </li>
+            <br />
+            <li>Et eligendi quibusdam aut debitis nisi.</li>
+            <br />
+            <li>Et nihil architecto in dolorem quis ea sint voluptas.</li>
+            <br />
+            <li>Aut iste nihil rem nisi enim et mollitia dolores.</li>
+          </ul>
+
+          <h4 id="annexe_11-2">Références et ressources supplémentaires</h4>
+          <p>
+            Et quaerat maiores eum optio consequatur At nesciunt voluptas non
+            natus dignissimos et obcaecati voluptatum ut illum asperiores sed
+            aspernatur <a href="">consequatur.</a>
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!--------------
+      ###################################
+      #############  Pied de page ###############
+      ########################################
+    ---------------->
+
+    <footer id="footer">
+      <nav class="social">
+        <a href=""><img src="img/Logo/insta.png" alt="" /></a>
+        <a href=""><img src="img/Logo/facebook.PNG" alt="" /></a>
+        <a href=""><img src="img/Logo/twitter.PNG" alt="" /></a>
+        <a href=""><img src="img/Logo/linkedin.png" alt="" /></a>
+      </nav>
+      <div><p>© 2023 - Tous droits réservés</p></div>
+    </footer>
+  </body>
+  <script src="guide.js"></script>
+</html>

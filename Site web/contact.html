@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CypherGuard - Support</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/Logo/icon.png" />
+
+    <!-----------------------------------------
+      -------------  Polices  -----------------
+    --------------------------------------------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!----------------------------------------
+      --------------------------------------
+      --------------------------------------->
+  </head>
+
+  <body>
+    <!--------------
+      ###################################
+      #############  Entête  ###############
+      ########################################
+    ---------------->
+
+    <header>
+      <div class="allLogo">
+        <img
+          src="img/Logo/logo-part1.png"
+          alt="Partie 1 du Logo"
+          class="logo"
+        />
+        <img src="img/Logo/blackshape.png" alt="" class="blackshape" />
+      </div>
+
+      <h1>
+        <a href="index.html">
+          Cipher
+          <div class="guard">Guard</div>
+        </a>
+      </h1>
+      <nav>
+        <a href="download.html">Téléchargement</a>
+        <a href="guide.html">Guide</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <div id="cLog"><img src="img/Logo/icon2.PNG" alt="" /></div>
+    <div class="menuContainer">
+      <button class="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </div>
+
+    <!--------------
+      ###################################
+      #############  Contenu principal ###############
+      ########################################
+    ---------------->
+
+    <main>
+      <section id="contact">
+        <div id="formulaire">
+          <h1>Contactez-nous</h1>
+          <form action="traitement.php" method="post">
+            <label for="nom">Nom :</label>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              placeholder="Entrez votre nom"
+              required
+            /><br /><br />
+
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Entrez votre e-mail"
+              required
+            /><br /><br />
+
+            <label for="message">Message :</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              style="resize: none"
+              placeholder="Entrez votre message"
+              required
+            ></textarea
+            ><br /><br />
+
+            <input
+              id="submit "
+              type="submit"
+              value="Envoyer"
+              style="color: black"
+            />
+          </form>
+        </div>
+        <img src="img/Divers/contact.jpg" alt="" />
+      </section>
+    </main>
+
+    <!--------------
+      ###################################
+      #############  Pied de page ###############
+      ########################################
+    ---------------->
+
+    <footer>
+      <nav class="social">
+        <a href=""><img src="img/Logo/insta.png" alt="" /></a>
+        <a href=""><img src="img/Logo/facebook.PNG" alt="" /></a>
+        <a href=""><img src="img/Logo/twitter.PNG" alt="" /></a>
+        <a href=""><img src="img/Logo/linkedin.png" alt="" /></a>
+      </nav>
+      <div><p>© 2023 - Tous droits réservés</p></div>
+    </footer>
+  </body>
+  <script src="contact.js"></script>
+</html>
